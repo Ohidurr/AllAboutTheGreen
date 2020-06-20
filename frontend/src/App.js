@@ -22,8 +22,6 @@ const App = () => {
         <PlantProfile />
         </Route>
 
-        
-
       </Switch>
     </div>
   );
