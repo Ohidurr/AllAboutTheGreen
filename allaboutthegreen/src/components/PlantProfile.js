@@ -6,7 +6,8 @@ const { REACT_APP_API } = process.env;
 const PlantProfile = ({type}) => {
   // const history = useHistory();
   // const [types, setTypes] = useState([]);
-  const [plant, setPlant] = useState([]);
+  const [plants, setPlants] = useState([]);
+  const [types, setTypes] = useState([])
 
   const fetchPlant = async () => {
     const URL = `?token=${REACT_APP_API}`;
@@ -14,7 +15,7 @@ const PlantProfile = ({type}) => {
     const HEROKU = `https://cors-anywhere.herokuapp.com/${API_URL}`;
     try {
       let res = await axios.get(HEROKU);
-      setPlant(res.data);
+      setPlants(res.data);
       debugger;
     } catch (error) {
       console.log(error);
@@ -27,16 +28,29 @@ const PlantProfile = ({type}) => {
     debugger;
   }, []);
 
+  const options = plants.map((plant) =>{
+    return <option>{plant}</option>
+  })
+
   const handleChange = async (selection) =>{
       try{
-
+        let list = await axios.get(selection)
+        setTypes(list)
       }catch(error){
-          
+        setType([]);
+        console.log(error)
       }
-  }
+  };
+
+  // const plantOptions = types.map((type) =>{
+  //   return <button></button>
+  // })
+
+
   return <div>
       <select onChange={(e) =>handleChange(e.target.value)} value={type}>
         <option value={""} disabled>Select your plant</option>
+        {options}
       </select>
   </div>;
 };

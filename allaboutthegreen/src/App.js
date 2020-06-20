@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
+import PlantProfile from './components/plantProfile';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-    
+      <PlantProfile />
     </div>
   );
 }
