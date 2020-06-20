@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, Router } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import Submissions from './components/Submissions'
 import OpenForum from './components/OpenForum'
 
@@ -16,8 +16,7 @@ const App = () => {
           <OpenForum/>
         </Route>
 
-        
-
+      
       </Switch>
     </div>
   );
