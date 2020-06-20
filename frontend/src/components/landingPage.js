@@ -1,16 +1,13 @@
-import React, {useState, useEffect} from "react"
-import landingPage from "./components/landingPage"
+import React from "react"
 
-// <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+const LandingPage = () => {
 
-const landingPage = () => {
-
-    const [serachFail, setsearchFail] = useState(false)
-
-    const Searchbox = (async (str) => {
-
-    })
+ return(
+ <div>
+ <h1> test </h1>
+ </div>
+    )
 }
 
 
-export default landingPage
+export default LandingPage
