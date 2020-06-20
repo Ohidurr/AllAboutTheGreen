@@ -19,7 +19,7 @@ const PlantProfile = ({type}) => {
       debugger;
     } catch (error) {
       console.log(error);
-      setPlant([]);
+      setPlants([]);
     }
   };
 
@@ -37,7 +37,7 @@ const PlantProfile = ({type}) => {
         let list = await axios.get(selection)
         setTypes(list)
       }catch(error){
-        setType([]);
+        setTypes([]);
         console.log(error)
       }
   };
