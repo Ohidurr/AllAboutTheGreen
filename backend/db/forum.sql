@@ -15,12 +15,12 @@ CREATE TABLE Uploads (
     plant_image VARCHAR
 );
 
-CREATE TABLE Comments (
-    id SERIAL PRIMARY KEY,
-    upload_id INT REFERENCES Uploads(id) ON DELETE CASCADE,
-    username TEXT, 
-    user_comment TEXT
-);
+-- CREATE TABLE Comments (
+--     id SERIAL PRIMARY KEY,
+--     upload_id INT REFERENCES Uploads(id) ON DELETE CASCADE,
+--     username TEXT, 
+--     user_comment TEXT
+-- );
 
 
 
