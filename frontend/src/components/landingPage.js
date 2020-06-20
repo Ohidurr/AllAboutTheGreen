@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import axios from 'axios'
 import PlantPage from './PlantPage'
 const { REACT_APP_API } = process.env;
@@ -30,11 +30,14 @@ const LandingPage = () => {
 
     const searchBox = (async (str) => {
         if(str === ""){
-            setSearch(fail)
+            setSearch(false)
             return fetchPlant
         }
         try{
-            let res = await axios.get('https://trefle.io/api/plants/?q{`req.params.str`})
+            let res = await axios.get(`https://trefle.io/api/plants/?q`)
+        }catch (error){
+            console.log("error 402, invalid search");
+            
         }
     })
 
