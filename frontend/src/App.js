@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, Router } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import Submissions from './components/Submissions'
 import OpenForum from './components/OpenForum'
 import PlantProfile from './components/PlantProfile';
@@ -21,6 +21,7 @@ const App = () => {
         <Route path ="/profile">
         <PlantProfile />
         </Route>
+
 
       </Switch>
     </div>
