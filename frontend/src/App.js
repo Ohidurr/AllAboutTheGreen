@@ -23,7 +23,7 @@ const App = () => {
         <PlantProfile />
         </Route>
 
-        landingPage
+        
         <Route exact path ={"/"}>
         <LandingPage/>
         </Route>

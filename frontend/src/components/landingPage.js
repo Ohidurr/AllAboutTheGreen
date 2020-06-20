@@ -34,7 +34,7 @@ const LandingPage = () => {
             return fetchPlant
         }
         try{
-            let res = await axios.get(`https://trefle.io/api/plants/?q`)
+            let res = await axios.get("https://trefle.io/api/plants/?q")
         }catch (error){
             console.log("error 402, invalid search");
             
@@ -48,7 +48,7 @@ const LandingPage = () => {
     }
 
     const handleSearch = (e) => {
-        e.preventDeafult()
+        // e.preventDeafult()
         searchBox(e.target.value)
     }
  return(
