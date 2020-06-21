@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react"
 import axios from 'axios'
-import PlantPage from './PlantPage'
 import { HEROKU, TOKEN } from "./Constant";
 import PlantResults from "./PlantResults"
 import PlantSearch from "./PlantSearch"
@@ -82,8 +81,8 @@ const LandingPage = () => {
         <input placeholder ="Search" onChange={handleSearch}></input>
         </form>
             <h2>Featured</h2>
-            <div class="card" onClick="http://localhost:3001/plants/525330">
-            <a href="http://localhost:3001/plants/525330"></a>
+            <div class="card" onClick="">
+            <a href=""></a>
             <img src="https://gardeningsolutions.ifas.ufl.edu/images/plants/flowers/flame_vine_flower.jpg" syle="width:100%"/>
   <div class="container">
     <h4><b>Plant of the Month:</b></h4>
