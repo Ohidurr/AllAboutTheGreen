@@ -26,6 +26,12 @@ const App = () => {
         <Route path="/plants/:id">
           <PlantContainer />
         </Route>
+        
+        {/* <Route exact path ="/">
+        <LandingPage/>
+        </Route> */}
+
+
       </Switch>
     </div>
   );
