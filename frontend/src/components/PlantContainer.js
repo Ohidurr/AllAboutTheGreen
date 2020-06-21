@@ -7,40 +7,31 @@ const PlantContainer = () => {
   const params = useParams();
   const [plantDetail, setPlantDetail] = useState({});
 
-  useEffect(() => {
-    axios({
-      method: "GET",
-      url: `${HEROKU}/`,
-      params: {
-        id: params.id,
-        token: TOKEN,
-      },
-    })
-      .then((result) => {
-        console.log(result.data)
-        setPlantDetail(result.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, [params.id]);
+ 
 
-  const actualPlant = ({ plant }) => {
-    console.log(plant);
-    return (
-      <div key={plant.id}>
-        <h1>{plant.name}</h1>
-      </div>
-    );
-  };
+    useEffect(() => {
+        debugger
+      axios({
+        method: "GET",
+        url: `${HEROKU}/${params.id}`,
+        params: {
+          token: TOKEN,
+        },
+      })
+        .then((result) => {
+          console.log(result.data)
+          setPlantDetail(result.data);
+          debugger
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }, [params.id]);
+
 
   return (
     <div>
-      <div>
-        {Object.keys(plantDetail).length > 0
-          ? actualPlant({ plant: plantDetail })
-          : null}
-      </div>
+      <h1>Plant Detail</h1>
     </div>
   );
 };

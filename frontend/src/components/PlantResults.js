@@ -1,18 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {useHistory} from 'react-router-dom';
+// import { Link } from "react-router-dom";
 
 const PlantResults = ({ result }) => {
+  const history = useHistory()
 
-  const plantList = result.map((plant, i) => {
-   return <Link key={i} to={`/plants/${plant.id}`}>
-      <li>
-      <button name={plant.id} value={plant.common_name}>
+  const handleClick = (e) =>{
+    e.preventDefault();
+    history.push(`/plants/${e.target.name}`, {url: e.target.name});
+  }
+
+  const plantList = result.map((plant) => {
+    return <div key={plant.id}>
+    <li>
+      <button name={plant.id} value={plant.common_name} onClick={handleClick} >
         <h2>{plant.common_name}</h2>
         <h4>Scientific Name:</h4>
         <p>{plant.scientific_name}</p>
       </button>
       </li>
-    </Link>;
+      </div>
   });
 
   return(

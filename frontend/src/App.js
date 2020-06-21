@@ -24,7 +24,7 @@ const App = () => {
         <PlantSearch />
         </Route>
 
-        <Route path ="plants/:id">
+        <Route path ="/plants/:id">
           <PlantContainer />
         </Route>
 
