@@ -1,1 +1,47 @@
-document.documentElement.style.setProperty(Green, #23504D);
+:root {
+--Green: #23504D; 
+ --Olive: #568258;
+ --lightGreen: #6F9B3C;
+ --yellowGreen: #A5CF61;
+ --Yellow: #E3E567;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bolder;
+    color:white;
+}
+#banner{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+    background-color: var(--yellowGreen);
+    height: 50px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--Olive)
+
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input[type=text] {
+        width: 130px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+      }
+      
+      /* When the input field gets focus, change its width to 100% */
+      input[type=text]:focus {
+        width: 100%;
+      }
+}

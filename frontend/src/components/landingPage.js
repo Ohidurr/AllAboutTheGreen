@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react"
 import axios from 'axios'
 import PlantPage from './PlantPage'
+import '../css/landingPage.css'
 const { REACT_APP_API } = process.env;
 
 
@@ -16,7 +17,7 @@ const LandingPage = () => {
     try {
       let res = await axios.get(HEROKU);
       setPlant(res.data);
-      debugger;
+    //   debugger;
     } catch (error) {
       console.log(error);
       setPlant([]);
@@ -25,7 +26,7 @@ const LandingPage = () => {
 
   useEffect(() => {
     fetchPlant();
-    debugger;
+    // debugger;
   }, []);
 
     const searchBox = (async (str) => {
@@ -43,9 +44,14 @@ const LandingPage = () => {
 
 
 
-    const featuredPlant = () => {
-
-    }
+//     const featuredPlant = (dailyPlant) => {
+//         Math.floor(Math.random() * Math.floor(dailyPlant));
+//  <div id="cardRow">
+//     <div class="column">
+//     <div class="card"></div>
+//   </div>
+// </div>
+//     }
 
     const handleSearch = (e) => {
         // e.preventDeafult()
@@ -53,10 +59,13 @@ const LandingPage = () => {
     }
  return(
     <div>
-        <h1> All About the Green </h1>
-        <form id="searchBox">
+    <header id="banner">Logo</header>
+        <h1 id="title"> All About the Green </h1>
+        <form id="searchBox" type="text">
         <input placeholder ="Search" onChange={handleSearch}></input>
         </form>
+
+        <footer></footer>
  
     </div>
     )
