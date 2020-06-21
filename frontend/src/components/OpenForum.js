@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios'
 import { apiURL } from '../util/apiURL'
 import PostSubmission from './PostSubmission'
+import '../css/open-forum.css'
 
 const OpenForum = () => {
     const API = apiURL();
@@ -38,9 +39,12 @@ const OpenForum = () => {
 
 
     return (
-        <div>
-            All Inquiry Submissions Now Listed
+        <div className="mainCard">
+            <h2 className="heading-div">Community Forum</h2>
+            
+            <div className="min-cards"> 
             {displaySubmission}
+            </div>
         </div>
     )
 }
