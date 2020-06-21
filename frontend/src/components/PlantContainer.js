@@ -18,7 +18,6 @@ const PlantContainer = () => {
         },
       })
         .then((result) => {
-            debugger
           setPlantDetail(result.data);
         })
         .catch((error) => {
@@ -40,10 +39,9 @@ const PlantContainer = () => {
     };
 
     const displayImgs =(images) =>{
-        debugger;
         let imagesArr = [];
         for(let i in images){
-            imagesArr.push(<li><img src={images[i].url}/></li>)
+            imagesArr.push(<li><img key={i} alt="plant images" src={images[i].url}/></li>)
         }
         return imagesArr;
     }

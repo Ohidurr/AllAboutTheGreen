@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react"
 import axios from 'axios'
 
-import PlantPage from './PlantPage'
+import PlantPage from './plantPage'
 import { HEROKU, TOKEN } from "./Constant";
 import PlantResults from "./PlantResults"
 import PlantSearch from "./PlantSearch"

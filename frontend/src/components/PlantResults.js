@@ -11,7 +11,6 @@ const PlantResults = ({ result }) => {
   };
 
   const plantList = result.map((plant) => {
-    if (plant.common_name !== null && plant.id !== null) {
       return (
         <div key={plant.id}>
           <li>
@@ -27,7 +26,6 @@ const PlantResults = ({ result }) => {
           </li>
         </div>
       );
-    }
   });
 
   return (
