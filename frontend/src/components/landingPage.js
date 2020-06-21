@@ -44,14 +44,10 @@ const LandingPage = () => {
 
 
 
-//     const featuredPlant = (dailyPlant) => {
-//         Math.floor(Math.random() * Math.floor(dailyPlant));
-//  <div id="cardRow">
-//     <div class="column">
-//     <div class="card"></div>
-//   </div>
-// </div>
-//     }
+    const featuredPlant = async (URL) => {
+        let res = await axios.get (Math.floor(Math.random(1) * Math.floor("https://trefle.io/api/plants/{id}")));
+ 
+    }
 
     const handleSearch = (e) => {
         // e.preventDeafult()
@@ -64,6 +60,12 @@ const LandingPage = () => {
         <form id="searchBox" type="text">
         <input placeholder ="Search" onChange={handleSearch}></input>
         </form>
+               
+ <div id="cardRow">
+    <div class="column" {...featuredPlant}>
+    <div class="card"></div>
+  </div>
+</div>
 
         <footer></footer>
  
