@@ -1,34 +1,43 @@
 import React from "react";
-import {useHistory} from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 // import { Link } from "react-router-dom";
 
 const PlantResults = ({ result }) => {
-  const history = useHistory()
+  const history = useHistory();
 
-  const handleClick = (e) =>{
+  const handleClick = (e) => {
     e.preventDefault();
-    history.push(`/plants/${e.target.name}`, {url: e.target.name});
-  }
+    history.push(`/plants/${e.target.name}`, { url: e.target.name });
+  };
 
   const plantList = result.map((plant) => {
-    return <div key={plant.id}>
-    <li>
-      <button name={plant.id !== "undefined" ? plant.id : null} value={plant.common_name} onClick={handleClick} >
-        <h2>{plant.common_name}</h2>
-        <h4>Scientific Name:</h4>
-        <p>{plant.scientific_name}</p>
-      </button>
-      </li>
+    return (
+      <div key={plant.id !== "undefined" ? plant.id : null}>
+        <li>
+          <button
+            name={plant.id}
+            value={plant.common_name}
+            onClick={handleClick}
+          >
+            <h2>{plant.common_name}</h2>
+            <h4>Scientific Name:</h4>
+            <p>{plant.scientific_name}</p>
+          </button>
+        </li>
       </div>
+    );
   });
 
-  return(
+  return (
     <ul>
       {plantList}
-      {plantList.length ? plantList : <p>Which plant would you like to search</p>}
+      {plantList.length ? (
+        plantList
+      ) : (
+        <p>Which plant would you like to search</p>
+      )}
     </ul>
-  )
-
+  );
 };
 
 export default PlantResults;

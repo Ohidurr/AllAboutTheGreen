@@ -46,7 +46,9 @@ const PlantContainer = () => {
         for(let i in images){
             imagesArr.push(<li><img src={images[i].url}/></li>)
         }
-        return imagesArr
+       if(imagesArr.length !== 0){
+            return imagesArr;
+        }
     }
 
 
