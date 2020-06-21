@@ -20,11 +20,11 @@ const App = () => {
           <OpenForum/>
         </Route>
         
-        <Route  exact path ="/plant">
+        <Route  exact path ="/plants">
         <PlantSearch />
         </Route>
 
-        <Route exact path ="plant/:id">
+        <Route path ="plants/:id">
           <PlantContainer />
         </Route>
 
