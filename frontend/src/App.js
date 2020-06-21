@@ -4,6 +4,7 @@ import Submissions from './components/Submissions'
 import OpenForum from './components/OpenForum'
 import LandingPage from './components/LandingPage';
 import PlantSearch from './components/PlantSearch';
+import PlantContainer from './components/PlantContainer';
 
 
 
@@ -19,14 +20,14 @@ const App = () => {
           <OpenForum/>
         </Route>
         
-        <Route  exact path ="/profile">
+        <Route  exact path ="/plant">
         <PlantSearch />
         </Route>
 
-{/*         
-        <Route exact path ={"/"}>
-        <LandingPage/>
-        </Route> */}
+        <Route exact path ="plant/:id">
+          <PlantContainer />
+        </Route>
+
 
       </Switch>
     </div>
