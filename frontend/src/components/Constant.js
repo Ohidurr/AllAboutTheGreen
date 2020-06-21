@@ -1,5 +1,3 @@
-import PlantSearch from "./PlantSearch";
-
 const { REACT_APP_API } = process.env;
 
 export const BASE_URL = "https://v0.trefle.io/api";
