@@ -1,9 +1,10 @@
--- DROP DATABASE IF EXISTS forum_db1;
--- CREATE DATABASE forum_db1;
+DROP DATABASE IF EXISTS forum_db1;
+CREATE DATABASE forum_db1;
 
 -- \c forum_db1;
 
--- DROP TABLE IF EXISTS Upload;
+DROP TABLE IF EXISTS Upload;
+DROP TABLE IF EXISTS Comments;
 
 
 
@@ -15,12 +16,12 @@ CREATE TABLE Uploads (
     plant_image VARCHAR
 );
 
--- CREATE TABLE Comments (
---     id SERIAL PRIMARY KEY,
---     upload_id INT REFERENCES Uploads(id) ON DELETE CASCADE,
---     username TEXT, 
---     user_comment TEXT
--- );
+CREATE TABLE Comments (
+    id SERIAL PRIMARY KEY,
+    upload_id INT REFERENCES Uploads(id) ON DELETE CASCADE,
+    username TEXT, 
+    user_comment TEXT
+);
 
 
 

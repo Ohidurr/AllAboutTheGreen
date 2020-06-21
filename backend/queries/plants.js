@@ -95,13 +95,58 @@ const deleteInquiry = async (req, res, next) => {
   }
 
 }
+
 // console.log(req)
 
+const getCommentsByUpload = async (req, res, next) => {
+    try {
+        const { id } = req.params
+        let allComments = await db.any(`SELECT Uploads.username, Comments.* 
+                                    FROM Uploads 
+                                    LEFT JOIN Comments ON Uploads.id = Comments.upload_id
+                                    WHERE upload_id= ${id}`)
+        res.status(200).json({
+            status: "Success",
+            message: "You're now checking out all the comments for this specific inquiry.",
+            payload: {
+                upload: id,
+                allComments
+            }
+        })
+  
+    } catch(err) {
+        res.status(400).json({
+            status: "Error",
+            message: "Something went wrong. You can't see the comments for this specific inquiry."
+        })
+        next(err)
+    }
+  }
+
+
+    
+  const deleteComment = async (req, res, next) => {
+    try {
+        let { id } = req.params;
+        let byeComment = await db.one("DELETE FROM Comments WHERE id = $1 RETURNING *", id);
+        res.status(200).json({
+            status: "Success",
+            message: "Comment " + id + " was successfully deleted from this inquiry!",
+            body: {
+                byeComment
+            }
+        }) 
+    } catch(err) {
+        res.status(400).json({
+            status: "Error",
+            message: "Sorry, this comment could not be deleted. Try again later."
+        });
+        next(err)
+    }
+  
+  }
 
 
 
 
-
-
-
-module.exports = { getAllPlantUploads, createPlantUpload, getSingleInquiryById, deleteInquiry}
+module.exports = { getAllPlantUploads, createPlantUpload, getSingleInquiryById, deleteInquiry, getCommentsByUpload, deleteComment }
