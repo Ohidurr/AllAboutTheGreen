@@ -2,8 +2,9 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom'
 import Submissions from './components/Submissions'
 import OpenForum from './components/OpenForum'
-import LandingPage from './components/LandingPage'
-import PlantProfile from './components/PlantProfile';
+import LandingPage from './components/LandingPage';
+import PlantSearch from './components/PlantSearch';
+import PlantContainer from './components/PlantContainer';
 
 
 
@@ -19,12 +20,15 @@ const App = () => {
           <OpenForum/>
         </Route>
         
-        <Route  exact path ="/profile">
-        <PlantProfile />
+        <Route  exact path ="/plant">
+        <PlantSearch />
         </Route>
 
+        <Route exact path ="plant/:id">
+          <PlantContainer />
+        </Route>
         
-        <Route exact path ={"/"}>
+        <Route exact path ="/">
         <LandingPage/>
         </Route>
 
