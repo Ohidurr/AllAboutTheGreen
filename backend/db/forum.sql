@@ -1,9 +1,10 @@
--- DROP DATABASE IF EXISTS forum_db1;
--- CREATE DATABASE forum_db1;
+DROP DATABASE IF EXISTS forum_db1;
+CREATE DATABASE forum_db1;
 
 -- \c forum_db1;
 
--- DROP TABLE IF EXISTS Upload;
+DROP TABLE IF EXISTS Upload;
+DROP TABLE IF EXISTS Comments;
 
 
 

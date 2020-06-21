@@ -9,6 +9,8 @@ const PORT = process.env.PORT;
 const app = express();
 
 const plantsRouter = require('./routes/Plants/plants')
+// const uploadCommentsRouter = require('./routes/nestedRoutes/comments');
+const commentsRouter = require('./routes/comments/comments')
 
 app.use(express.static(path.resolve(__dirname, "./public")));
 app.use(cors());
@@ -16,6 +18,8 @@ app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json());
 
 app.use('/plant-inquiries', plantsRouter);
+// app.use(':id/comments', uploadCommentsRouter)
+app.use('/comments', commentsRouter)
 
 
 
