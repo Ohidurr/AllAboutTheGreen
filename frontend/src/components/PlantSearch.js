@@ -19,7 +19,6 @@ const PlantSearch = (...args) => {
         token: TOKEN,
       },
     }).then((result) => {
-      console.log(result.data);
       setResult(result.data);
     });
   };
