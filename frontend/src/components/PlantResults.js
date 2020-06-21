@@ -13,7 +13,7 @@ const PlantResults = ({ result }) => {
   const plantList = result.map((plant) => {
     return <div key={plant.id}>
     <li>
-      <button name={plant.id} value={plant.common_name} onClick={handleClick} >
+      <button name={plant.id !== "undefined" ? plant.id : null} value={plant.common_name} onClick={handleClick} >
         <h2>{plant.common_name}</h2>
         <h4>Scientific Name:</h4>
         <p>{plant.scientific_name}</p>
