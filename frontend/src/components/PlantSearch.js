@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-// const { REACT_APP_API } = process.env;
 import { HEROKU, TOKEN } from "./Constant";
 import Search from "./Search";
 import PlantResults from './PlantResults'

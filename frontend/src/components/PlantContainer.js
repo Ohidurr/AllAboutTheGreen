@@ -10,7 +10,6 @@ const PlantContainer = () => {
  
 
     useEffect(() => {
-        debugger
       axios({
         method: "GET",
         url: `${HEROKU}/${params.id}`,
@@ -19,9 +18,8 @@ const PlantContainer = () => {
         },
       })
         .then((result) => {
-          console.log(result.data)
+            debugger
           setPlantDetail(result.data);
-          debugger
         })
         .catch((error) => {
           console.log(error);
@@ -33,7 +31,7 @@ const PlantContainer = () => {
             <div className="plantDisplay">
                 <h2>{plantDetail.common_name}</h2>
                 <h3>Family Name:</h3>
-                <p>{plantDetail.family_common_name}</p>
+                <p>{plantDetail.family_common_name !== null ? plantDetail.family_common_name : plantDetail.common_name}</p>
                 <h3>Scientific Name:</h3>
                 <p>{plantDetail.scientific_name}</p>
                 {displayImgs(plantDetail.images)}
@@ -42,13 +40,12 @@ const PlantContainer = () => {
     };
 
     const displayImgs =(images) =>{
+        debugger;
         let imagesArr = [];
         for(let i in images){
             imagesArr.push(<li><img src={images[i].url}/></li>)
         }
-       if(imagesArr.length !== 0){
-            return imagesArr;
-        }
+        return imagesArr;
     }
 
 
