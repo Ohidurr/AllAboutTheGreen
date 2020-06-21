@@ -1,5 +1,8 @@
 import React, {useState, useEffect} from "react"
 import axios from 'axios'
+import PlantPage from './PlantPage'
+import '../css/landingPage.css'
+
 const { REACT_APP_API } = process.env;
 
 
@@ -15,7 +18,7 @@ const LandingPage = () => {
     try {
       let res = await axios.get(HEROKU);
       setPlant(res.data);
-      debugger;
+    //   debugger;
     } catch (error) {
       console.log(error);
       setPlant([]);
@@ -24,7 +27,7 @@ const LandingPage = () => {
 
   useEffect(() => {
     fetchPlant();
-    debugger;
+    // debugger;
   }, []);
 
     const searchBox = (async (str) => {
@@ -42,8 +45,9 @@ const LandingPage = () => {
 
 
 
-    const featuredPlant = () => {
-
+    const featuredPlant = async (URL) => {
+        let res = await axios.get (Math.floor(Math.random(1) * Math.floor("https://trefle.io/api/plants/{id}")));
+ 
     }
 
     const handleSearch = (e) => {
@@ -52,10 +56,19 @@ const LandingPage = () => {
     }
  return(
     <div>
-        <h1> All About the Green </h1>
-        <form id="searchBox">
+    <header id="banner">Logo</header>
+        <h1 id="title"> All About the Green </h1>
+        <form id="searchBox" type="text">
         <input placeholder ="Search" onChange={handleSearch}></input>
         </form>
+               
+ <div id="cardRow">
+    <div class="column" {...featuredPlant}>
+    <div class="card"></div>
+  </div>
+</div>
+
+        <footer></footer>
  
     </div>
     )
