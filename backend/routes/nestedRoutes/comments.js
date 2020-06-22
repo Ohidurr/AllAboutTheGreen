@@ -1,4 +1,4 @@
-const uploadComments = require("express").Router({ mergeParams: true});
+const plants = require("express").Router({ mergeParams: true});
 
 
 const { 
@@ -8,11 +8,11 @@ const {
 
 
 
-uploadComments.get("/:id/comments", getCommentsByUpload);
-uploadComments.delete("/:id/comments/:comment_id", deleteComment);
+plants.get("/", getCommentsByUpload);
+plants.delete("/:id/comments/:comment_id", deleteComment);
 
 
 
 
 
-module.exports = uploadComments;
+// module.exports = uploadComments;

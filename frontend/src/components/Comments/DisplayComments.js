@@ -6,16 +6,18 @@ import { apiURL } from '../../util/apiURL'
 
 
 
-const DisplayComments = ({uploadId}) => {
+const DisplayComments = ({id}) => {
     const API = apiURL();
     const [showComments, setShowComments] = useState([]);
 
     useEffect(() => {
         const grabAllComments = async () => {
+
+            debugger
             try {
                 let res = await axios({
-                    method: "get",
-                    url: `${API}/plant-inquiries/${uploadId}/comments`
+                    method: "GET",
+                    url: `${API}/plant-inquiries/${id}/comments`
                 })
                 setShowComments(res)
                 console.log(res.data)
@@ -30,7 +32,7 @@ const DisplayComments = ({uploadId}) => {
 
     const displayNewComment = showComments.map(userComments => {
         return (
-            <PostComment key={userComments.id} commentId={userComments.id} uploadId={userComments.upload_id} userName={userComments.username} singleComment={userComments.user_comment}/>
+            <PostComment key={userComments.id} commentId={userComments.id} id={userComments.upload_id} userName={userComments.username} singleComment={userComments.user_comment}/>
         )
     })
 
