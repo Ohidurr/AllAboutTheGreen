@@ -32,7 +32,6 @@ const PlantSearch = (...args) => {
 
   return (
     <>
-    <NavBar/>
       <Search {...plantProps} />
       <PlantResults result={result} />
     </>

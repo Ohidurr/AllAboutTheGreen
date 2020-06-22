@@ -50,7 +50,6 @@ const Submissions = () => {
 
     return (
         <div>
-        <NavBar/>
         <div>
             <h1 className="submit-heading"> Submissions </h1>
             <h3 className="sub-heading-submit"> Submit your pictures for tips and tricks or just to inspire others around the world with your progress </h3>
