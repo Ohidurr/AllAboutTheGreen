@@ -1,45 +1,61 @@
 /* @import <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" /> */
 
 :root {
---Green: #23504D; 
- --Olive: #568258;
- --lightGreen: #6F9B3C;
- --yellowGreen: #A5CF61;
- --Yellow: #E3E567;
+  --Green: #23504d;
+  --Olive: #568258;
+  --lightGreen: #6f9b3c;
+  --yellowGreen: #a5cf61;
+  --Yellow: #e3e567;
 }
-
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: xx-large;
-    font-weight: bolder;
+.landingPage {
+  top: 70px;
+  position: relative;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  font-weight: bolder;
   text-decoration: underline;
-    color:white;
+  color: white;
 }
-#banner{
+#banner {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-    background-color: var(--Green);
-    height: 50px;
+  background-color: var(--Green);
+  height: 50px;
+}
+.monthPlant{
+  position: relative;
+  padding: 50px;
+  margin: 50px;
+  height: 100px;
+  width: 300px;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: var(--Olive);
+  text-decoration: underline;
 }
 
-h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 70px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:var(--Olive);
-    text-decoration: underline;
-
+.plantSearch{
+  border: 5px solid var(--Olive);
+  border-radius: 10%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin: 1rem;
 }
-
-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .search input {
   width: 300px;
@@ -47,39 +63,40 @@ form{
   margin-top: 30px;
   border-radius: 10px;
   -webkit-transition: width 0.4s ease-in-out;
-transition: width 0.4s ease-in-out;
-
+  transition: width 0.4s ease-in-out;
 }
-.search input[type=text]:focus{
+.search input[type="text"]:focus {
   width: 50px;
   -webkit-transition: width 0.4s ease-in-out;
-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
 }
-   
+
 .card {
-  
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 25%;
 }
 
-
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-
-.container {
-  padding: 2px 16px;
-}
-
-#featuredImg{
+.imgContainer {
+  padding: 16px 16px;
   display: flex;
   justify-content: center;
+  padding-right: 35%;
+  border: 5px solid var(--Olive);
+  border-radius: 5%;
 
 }
 
-h2{
+#featuredImg {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
   color: var(--Green);
   font-size: xx-large;
 }

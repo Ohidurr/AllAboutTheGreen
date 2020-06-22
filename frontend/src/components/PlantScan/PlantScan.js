@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { ScanToken } from './Scankey';
 
+
+
+
 const PlantScan = () => {
     const [files, setFiles] = useState([]);
 
@@ -70,15 +73,11 @@ const PlantScan = () => {
       }
     }
     
-
-    
-
-
     return (
         <div>
             <form>
                 <input file={files} type="file" multiple />
-                <button onClick={handleClick} type="button">OK</button>
+                <button onClick={handleClick} type="button">Process Image</button>
             </form>
         </div>
     )

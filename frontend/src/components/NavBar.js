@@ -1,17 +1,17 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'
-// import '../css/NavBar.css'
-// import Logo from '../assets/Logo'
-// import Mainlogo from '../assets/Mainlogo'
+import { NavLink } from 'react-router-dom';
+import "../css/NavBar.css";
+
+
 const NavBar = () => {
     return (
-      <div className="navBar">
-        <nav>
+      <div className="navBarContainer">
+        <nav className="navBar">
           <ul className="navUl">
             <li className="navLi">
               <NavLink exact to="/" className="logo-style">
-                {/* <Logo/> */}
-              </NavLink>
+                <h3 className="logo">AATG</h3>
+             </NavLink>
             </li>
             <li className="navLi">
               <NavLink exact to="/" className="nav-selected">
