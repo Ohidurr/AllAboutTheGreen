@@ -4,10 +4,11 @@ import PostComment from '../Comments/PostComment'
 import { useInput } from '../../util/useInput';
 import { apiURL } from '../../util/apiURL';
 import axios from 'axios';
+import '../../css/createcomment.css'
 
 
 
-const CreateComments = () => {
+const CreateComments = ({uploadId}) => {
   const API = apiURL();
   // const [uploadId, setUploadId] = useState("");
   const commentUsername = useInput("");
@@ -72,7 +73,7 @@ const CreateComments = () => {
           
             <div className="buttonDiv">
               <button className="commentButton" type="submit" value="Add comment">
-                Submit Inquiry
+                Submit Banter
               </button>
             </div>
           </form>

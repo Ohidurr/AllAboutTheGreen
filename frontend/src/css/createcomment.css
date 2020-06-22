@@ -1,7 +1,7 @@
 .commentDiv {
     background-color: lavender;
     border-radius: 2rem;
-    width: 100%;
+    width: 45.2rem;
     margin-left: 2rem;
     display: grid;
     grid-template-rows: 4rem 1fr 1fr;
@@ -40,9 +40,9 @@
 
 }
 
-.buttonDiv {
+/* .buttonDiv {
 
-}
+} */
 
 .commentButton {
     margin-top: 3rem

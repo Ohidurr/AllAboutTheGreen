@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../css/postcomment.css'
+// import '../../css/postcomment.css'
 
 
 const PostComment = ({commentId, uploadId, userName, userComment}) => {
