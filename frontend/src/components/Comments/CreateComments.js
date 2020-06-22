@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import PostComment from '../Comments/PostComment'
-// import CommentData from "./CommentData";
 import { useInput } from '../../util/useInput';
 import { apiURL } from '../../util/apiURL';
 import axios from 'axios';

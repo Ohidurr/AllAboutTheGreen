@@ -14,11 +14,9 @@ const OpenForum = () => {
     useEffect(() => {
         const fetchAllInquiries = async () => {
             try {
-                debugger
                 let res = await axios({
                     method: "get",
-                    url: `${API}/plant-inquiries`,
-                    
+                    url: `${API}/plant-inquiries`,   
                 })
                 setInquiries(res.data.payload.allPlantUploads);
                 console.log(res.data)

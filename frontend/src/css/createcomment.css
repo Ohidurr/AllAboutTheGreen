@@ -1,9 +1,7 @@
 .commentDiv {
     background-color: #a5cfa5;
     border-radius: 2rem;
-    /* border: none; */
     border: 5px solid #23504d;
-    /* border-top: 3px solid; */
     width: 45.3rem;
     margin-left: 2rem;
     display: grid;
@@ -14,17 +12,14 @@
     display: grid;
     grid-template-rows: 4rem 1fr 1fr;
     margin-left: -13rem;
-
 }
 
 .commentSectionDiv {
-    /* border: 3px solid #23504d; */
     border-radius: 2rem;
     width: 45rem;
 }
 
 .commentHeading {
-    /* color: #a5cfa5 */
     color: #ffffff;
 }
 
@@ -32,30 +27,32 @@
     width: 30rem;
     display: flex;
     float: left;
-    /* margin-bottom: -2rem; */
-
 }
 
 .comment-div-yup {
     width: 30rem;
     display: flex;
     float: left;
+    margin-top: -4rem;
     margin-bottom: -2rem;
-
 }
 
-/* .buttonDiv {
-
-} */
+.buttonDiv {
+    margin-top: -2rem;
+    margin-left: -9rem;
+}
 
 .commentButton {
-    margin-top: 3rem
+    margin-top: 3rem;
+    border-radius: 2rem;
+    width: 10rem;
 }
 
 .add-username-style {
-    margin-left: 0.5rem;
+    margin-left: 0.3rem;
 }
 
 .add-comment-style {
     margin-left: 0.5rem;
+    width: 15rem;
 }
