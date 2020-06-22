@@ -1,0 +1,31 @@
+:root{
+    --Green: #23504D; 
+ --Olive: #568258;
+ --lightGreen: #6F9B3C;
+ --yellowGreen: #A5CF61;
+ --Yellow: #E3E567;
+ --White: #ffffff;
+}
+
+.plantResultUl{
+    display: grid;
+    align-items: space-evenly;
+    flex-direction: row;
+    margin: 30px 30px;
+}
+.plantResultLi{
+    list-style-type: none;
+    padding: 30px 30px;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.plant{
+    border: 3px solid var(--lightGreen);
+    box-shadow: 0 30px 30px 0 rgba(0,0,0,0.2);
+    border-radius: 50px;
+
+}
+
