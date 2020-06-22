@@ -11,21 +11,24 @@ const PlantResults = ({ result }) => {
   };
 
   const plantList = result.map((plant) => {
+    
+    if(plant.common_name !== null){
       return (
         <div key={plant.id}>
           <li>
-            <button
+              <h2>{plant.common_name}</h2>
+              <h4>Scientific Name:</h4>
+              <p>{plant.scientific_name}</p>
+              <button
               name={plant.id}
               value={plant.common_name}
               onClick={handleClick}
               >Click to learn More about {plant.common_name}
               </button>
-              <h2>{plant.common_name}</h2>
-              <h4>Scientific Name:</h4>
-              <p>{plant.scientific_name}</p>
           </li>
         </div>
       );
+    }
   });
 
   return (
