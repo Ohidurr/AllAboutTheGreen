@@ -7,6 +7,7 @@ import LandingPage from "./components/LandingPage";
 import PlantSearch from "./components/PlantSearch";
 import PlantContainer from "./components/PlantContainer";
 import PlantScan from './components/PlantScan/PlantScan'
+import ScanResults from './components/PlantScan/ScanResults'
 
 const App = () => {
   return (
@@ -27,11 +28,13 @@ const App = () => {
           {/* <PlantContainer />
         </Route> */}
 
-        <Route path="/plant-scan" component={PlantScan} />
+        <Route exact path="/plant-scan" component={PlantScan} />
         
         {/* <Route exact path ="/">
         <LandingPage/>
         </Route> */}
+
+        <Route exact path="/plant-scan/results" component={ScanResults} />
 
 
       </Switch>
