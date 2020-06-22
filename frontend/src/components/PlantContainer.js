@@ -9,7 +9,6 @@ import Getty from '../SVGfiles/GettyImages-guava-leaves_1200.jpg'
 import Growing from '../SVGfiles/Growing-Guava-The-Complete-Guide-to-Plant-Care-and-Harvest-Guava-FI.jpg';
 import Strawberry from '../SVGfiles/Strawberry-Guava-Fragrance-Oil-w.jpg'
 import { HEROKU, TOKEN } from "./Constant";
-import NavBar from './NavBar'
 import axios from "axios";
 
 const PlantContainer = () => {
@@ -107,7 +106,7 @@ const PlantContainer = () => {
   //   };
 
   return (
-    <div className="plantContainer">
+    <div className="plantContainerTwo">
       <h1 className="plantContainerTitle">Plant Detail</h1>
       {singlePlantDisplay()}
     </div>

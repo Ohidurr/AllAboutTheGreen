@@ -29,13 +29,11 @@ const PlantSearch = (...args) => {
     });
   };
 
-  let cardDisplay = <p>Which plant would you like to search today</p>;
+  let cardDisplay;
   if(loading){
     cardDisplay = <Loading/>
   }else if(result){
     cardDisplay = <PlantResults result={result} />
-  }else{
-    cardDisplay = <p>Which plant would you like to search today</p>
   }
 
   const plantProps = {
@@ -46,11 +44,11 @@ const PlantSearch = (...args) => {
   };
 
   return (
-    <>
+    <div className="originalSearch">
       <Search {...plantProps} />
       {/* <PlantResults result={result} /> */}
       <Card>{cardDisplay}</Card>
-    </>
+    </div>
   );
 };
 

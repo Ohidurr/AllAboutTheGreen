@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-// import { Link } from "react-router-dom";
+import '../css/PlantResults.css'
 
 const PlantResults = ({ result }) => {
   const history = useHistory();
@@ -11,14 +11,13 @@ const PlantResults = ({ result }) => {
   };
 
   const plantList = result.map((plant) => {
-    
+
     if(plant.common_name !== null){
       return (
-        <div key={plant.id} className="">
-          <li>
+        <div key={plant.id} className="plant">
+          <li className="plantResultLi">
               <h2>{plant.common_name}</h2>
-              <h4>Scientific Name:</h4>
-              <p>{plant.scientific_name}</p>
+              <p><b>Scientific Name:</b> {plant.scientific_name}</p>
               <button
               name={plant.id}
               value={plant.common_name}
@@ -33,9 +32,7 @@ const PlantResults = ({ result }) => {
 
   return (
     <div className="plantResult">
-    <ul>
       {plantList}
-    </ul>
     </div>
   );
 };
