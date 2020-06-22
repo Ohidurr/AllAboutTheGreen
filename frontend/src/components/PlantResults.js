@@ -10,13 +10,17 @@ const PlantResults = ({ result }) => {
     history.push(`/plants/${e.target.name}`, { url: e.target.name });
   };
 
+  const uppercase = {
+    textTransform: "uppercase"
+  }
+
   const plantList = result.map((plant) => {
 
     if(plant.common_name !== null){
       return (
         <div key={plant.id} className="plant">
           <li className="plantResultLi">
-              <h2>{plant.common_name}</h2>
+              <h2 style={{uppercase}}>{plant.common_name}</h2>
               <p><b>Scientific Name:</b> {plant.scientific_name}</p>
               <button
               name={plant.id}
