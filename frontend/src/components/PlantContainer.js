@@ -73,55 +73,22 @@ const PlantContainer = () => {
       );
     } else if (id === 171840) {
       return (
-        // <div>
-        //   <ul>
-        //     <li>
-        //       <img src={Benefits} />
-        //     </li>
-        //     <li>
-        //       <img src={Getty} />
-        //     </li>
-        //     <li>
-        //       <img src={Growing} />
-        //     </li>
-        //     <li>
-        //       <img src={Strawberry} />
-        //     </li>
-        //   </ul>
-        // </div>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-      
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src={Benefits} alt="Los Angeles"/>
-          </div>
-      
-          <div class="item">
-            <img src={Getty} alt="Chicago"/>
-          </div>
-      
-          <div class="item">
-            <img src={Growing} alt="New York"/>
-          </div>
-          <div class="item">
-            <img src={Strawberry} alt="New York"/>
-          </div>
+        <div>
+          <ul>
+            <li>
+              <img src={Benefits} />
+            </li>
+            <li>
+              <img src={Getty} />
+            </li>
+            <li>
+              <img src={Growing} />
+            </li>
+            <li>
+              <img src={Strawberry} />
+            </li>
+          </ul>
         </div>
-      
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
       );
     }
   };
