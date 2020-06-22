@@ -1,0 +1,13 @@
+.hello-main-top {
+    top: 70px;
+    position: relative;
+}
+
+.image-scan-heading {
+    justify-content: center;
+    text-align: center;
+}
+
+.image-scan-form {
+    margin-top: 2rem;
+}

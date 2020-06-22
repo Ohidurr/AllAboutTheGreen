@@ -1,4 +1,6 @@
 .scan-result-main-div {
+    top: 70px;
+    position: relative;
     display: grid;
     grid-template-columns: 200px 1fr;
     grid-gap: 1rem;

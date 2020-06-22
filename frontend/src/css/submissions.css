@@ -1,3 +1,8 @@
+.top-div-yeah {
+    top: 70px;
+    position: relative;
+}
+
 .submit-heading {
     font-weight: 700;
     font: 26px;
@@ -10,7 +15,7 @@
 .sub-heading-submit {
     justify-content: center;
     text-align: center;
-    border: 3px solid #a5cf61;
+    border: 1px solid #a5cf61;
     width: 68rem;
     margin-left: 6rem;
     border-radius: 1rem;
