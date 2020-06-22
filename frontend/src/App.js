@@ -11,21 +11,18 @@ const App = () => {
     <div className="App">
       <Switch>
         <Route exact path="/" component={LandingPage} />
-        <Route exact path="/submissons">
-          <Submissions />
-        </Route>
 
-        <Route exact path="/open-forum">
-          <OpenForum />
-        </Route>
+        <Route exact path="/submissons" component={Submissions}/>
+          
+        <Route exact path="/open-forum" component={OpenForum} />
 
-        <Route exact path="/plants">
-          <PlantSearch />
-        </Route>
+        <Route exact path="/plants" component={PlantSearch} />
+          {/* <PlantSearch />
+        </Route> */}
 
-        <Route path="/plants/:id">
-          <PlantContainer />
-        </Route>
+        <Route path="/plants/:id" component={PlantContainer} />
+          {/* <PlantContainer />
+        </Route> */}
         
         {/* <Route exact path ="/">
         <LandingPage/>
