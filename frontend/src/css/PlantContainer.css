@@ -1,0 +1,34 @@
+:root{
+    --Green: #23504D; 
+ --Olive: #568258;
+ --lightGreen: #6F9B3C;
+ --yellowGreen: #A5CF61;
+ --Yellow: #E3E567;
+ --White: #ffffff;
+}
+
+.plantContainerTwo{
+    position: relative;
+    top: 70px;
+}
+
+.displayCard{
+    border: 2px solid var(--Olive);
+    border-radius: 20px;
+    justify-content: space-evenly;
+    text-align: center;
+    list-style-type: none;
+    box-shadow: 0 30px 30px 0 rgba(0,0,0,0.2);;
+}
+.cardDiv{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cardImgs{
+    border: 2px solid var(--lightGreen);
+    border-radius: 8px;
+    padding: 5px;
+    height: 300px;
+    width: 300px;
+}
