@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useInput } from '../util/useInput';
 import { apiURL } from '../util/apiURL';
-
+import NavBar from './NavBar'
 const Submissions = () => {
 
     const [file, setFile] = useState({preview: "", raw: ""});
@@ -49,6 +49,7 @@ const Submissions = () => {
 
     return (
         <div>
+        <NavBar/>
             Submit your plant pictures for tips, advice or just to show off...
             <form onSubmit={handleNewSubmission}>
                 <button type="submit"> Submit </button>

@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Submissions from "./components/Submissions";
 import OpenForum from "./components/OpenForum";
-import LandingPage from "./components/landingPage";
+import LandingPage from "./components/LandingPage";
 import PlantSearch from "./components/PlantSearch";
 import PlantContainer from "./components/PlantContainer";
 

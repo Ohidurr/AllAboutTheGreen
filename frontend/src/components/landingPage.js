@@ -4,7 +4,7 @@ import { HEROKU, TOKEN } from "./Constant";
 import PlantResults from "./PlantResults"
 import PlantSearch from "./PlantSearch"
 import PlantContainer from './PlantContainer'
-// import Constant from "./Constant"
+import NavBar from './NavBar'
 import '../css/landingPage.css'
 
 const { REACT_APP_API } = process.env;
@@ -75,8 +75,12 @@ const LandingPage = () => {
  return(
     <div>
     
-    <header id="banner">Logo</header>
-        <h1 id="title"> All About the Green </h1>
+     
+    
+    <header id="banner"></header>
+
+        <NavBar/>
+        <h1 id="title"> All About The Green</h1>
         <form id="searchBox" type="text">
         <input placeholder ="Search" onChange={handleSearch}></input>
         </form>
