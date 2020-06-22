@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ScanToken } from './Scankey';
-import NavBar from '../NavBar';
+
 
 
 
@@ -64,7 +64,6 @@ const PlantScan = () => {
 
     return (
         <div>
-        <NavBar/>
             <form>
                 <input file={files} type="file" multiple />
                 <button onClick={handleClick} type="button">OK</button>
