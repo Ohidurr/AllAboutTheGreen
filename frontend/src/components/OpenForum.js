@@ -52,6 +52,6 @@ const OpenForum = () => {
     )
 }
 
-export default OpenForum
+export default OpenForum;
 
   

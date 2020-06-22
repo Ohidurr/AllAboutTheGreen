@@ -1,0 +1,18 @@
+:root {
+  --Green: #23504d;
+  --Olive: #568258;
+  --lightGreen: #6f9b3c;
+  --yellowGreen: #a5cf61;
+  --Yellow: #e3e567;
+}
+
+h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: var(--yellowGreen);
+  text-decoration: underline;
+}
