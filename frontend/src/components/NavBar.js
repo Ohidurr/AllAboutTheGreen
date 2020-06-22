@@ -19,6 +19,11 @@ const NavBar = () => {
               </NavLink>
             </li>
             <li className="navLi">
+              <NavLink exact to="/plant-scan" className="nav-selected">
+                Plant Scan
+              </NavLink>
+            </li>
+            <li className="navLi">
               <NavLink exact to="/plants" className="nav-selected">
                 Plant Search
               </NavLink>
