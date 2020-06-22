@@ -49,7 +49,7 @@ const CreateComments = ({uploadId}) => {
     return (
       <div className="commentDiv">
         <div className="commentSectionDiv">
-          <h1 className="commentHeading">Comment Section </h1>
+          <h2 className="commentHeading">Comment Section </h2>
         </div>
 
 

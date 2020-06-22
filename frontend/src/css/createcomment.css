@@ -1,7 +1,10 @@
 .commentDiv {
-    background-color: lavender;
+    background-color: #a5cfa5;
     border-radius: 2rem;
-    width: 45.2rem;
+    /* border: none; */
+    border: 5px solid #23504d;
+    /* border-top: 3px solid; */
+    width: 45.3rem;
     margin-left: 2rem;
     display: grid;
     grid-template-rows: 4rem 1fr 1fr;
@@ -15,20 +18,21 @@
 }
 
 .commentSectionDiv {
-    border: 3px solid #23504d;
+    /* border: 3px solid #23504d; */
     border-radius: 2rem;
     width: 45rem;
 }
 
 .commentHeading {
-    color: #a5cfa5
+    /* color: #a5cfa5 */
+    color: #ffffff;
 }
 
 .username-div-yup {
     width: 30rem;
     display: flex;
     float: left;
-    margin-bottom: -2rem;
+    /* margin-bottom: -2rem; */
 
 }
 

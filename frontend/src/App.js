@@ -12,7 +12,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={LandingPage} />
 
-        <Route exact path="/submissons" component={Submissions}/>
+        <Route exact path="/submissions" component={Submissions}/>
           
         <Route exact path="/open-forum" component={OpenForum} />
 
