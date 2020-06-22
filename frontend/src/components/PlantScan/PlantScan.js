@@ -6,7 +6,8 @@ import '../../css/plantscan.css'
 
 
 const PlantScan = () => {
-    const [files, setFiles] = useState([]);
+    // const [files, setFiles] = useState([]);
+    const [file, setFile] = useState({preview: "", raw: ""});
 
     // const fetchPlantData = () => {
 
@@ -60,6 +61,15 @@ const PlantScan = () => {
 
     // }
 
+    const onSelectImage = (e) => {
+      if (e.target.files.length) {
+          setFile({
+            preview: URL.createObjectURL(e.target.files[0]),
+            raw: e.target.files[0]
+          });
+        }
+  }
+
 
     const handleClick = async (e)=>{
       e.preventDefault()
@@ -78,10 +88,12 @@ const PlantScan = () => {
         <div className="hello-main-top">
 
           <h2 className="image-scan-heading"> Image Scan </h2>
-            <form className="image-scan-form">
-                <input file={files} type="file" multiple />
+            <form onSubmit={onSelectImage} className="image-scan-form">
+                <input src={file} type="file" multiple />
                 <button onClick={handleClick} type="button">Process Image</button>
             </form>
+
+        
         </div>
     )
 

@@ -79,9 +79,29 @@ const CreateComments = ({uploadId}) => {
           <div>
 
           </div>
-          {/* <div>
-              {displayNewComment}
-          </div> */}
+
+
+        <div className="comment-div-style-yeah" >
+          <div className="individual-comment">
+              {/* {displayNewComment} */}
+              <p> username: xoxoGG</p>
+              <p> comment: This is such a cool plant</p>
+          </div>
+          <br/>
+
+          <div className="individual-comment">
+              {/* {displayNewComment} */}
+              <p> username: yoHenry</p>
+              <p> comment: whats the name of this plant?</p>
+          </div>
+            <br/>
+          <div className="individual-comment">
+              {/* {displayNewComment} */}
+              <p> username: darsuChats</p>
+              <p> comment: I need the plug? Where can I get this</p>
+          </div>
+        </div>
+          
         </div>
       </div>
     );
