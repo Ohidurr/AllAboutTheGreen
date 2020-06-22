@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import NavBar from './components/NavBar'
 import Submissions from "./components/Submissions";
 import OpenForum from "./components/OpenForum";
-import LandingPage from "./components/landingPage";
+import LandingPage from "./components/LandingPage";
 import PlantSearch from "./components/PlantSearch";
 import PlantContainer from "./components/PlantContainer";
 import PlantScan from './components/PlantScan/PlantScan'
