@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useInput } from '../util/useInput';
 import { apiURL } from '../util/apiURL';
 import NavBar from './NavBar'
+import '../css/submissions.css'
 const Submissions = () => {
 
     const [file, setFile] = useState({preview: "", raw: ""});
@@ -50,13 +51,35 @@ const Submissions = () => {
     return (
         <div>
         <NavBar/>
-            Submit your plant pictures for tips, advice or just to show off...
-            <form onSubmit={handleNewSubmission}>
-                <button type="submit"> Submit </button>
-                <input className="input-style-in" type="file" name="myImage" accept="image/png/jpeg" onChange={onSelectImage} />
-                <img src="" alt="Preview" src={file.preview} className="image-preview__image"/> 
+        <div>
+            <h1 className="submit-heading"> Submissions </h1>
+            <h3 className="sub-heading-submit"> Submit your pictures for tips and tricks or just to inspire others around the world with your progress </h3>
+
+        </div>
+            <form className="submit-form" onSubmit={handleNewSubmission}>
+
+              <div className="upload-submission-file">
+                <div className="style-the-sel-btn">
+                  <input className="input-style-img" type="file" name="myImage" accept="image/png/jpeg" onChange={onSelectImage} />
+                </div>
+
+                <div>
+                  <img src="" alt="Preview" src={file.preview} className="image-preview__image-submission"/> 
+                </div>
+              </div>
+
+              <div className="submit-user-info">
+                <label> Username: </label>
                 <input placeholder="Enter username" {...setUsername}/>
+                <br/>
+                <label> Note: </label>
                 <textarea rows="5" cols="30" className="add-note-style" type="textarea" placeholder="Tell us what's going on..." {...setDescription}/> 
+                <br/>
+                <button className="style-submission-btn" type="submit"> Submit </button>
+              </div>
+
+              <div>
+              </div>
             </form>
         </div>
     )

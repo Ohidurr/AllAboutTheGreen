@@ -1,0 +1,82 @@
+.submit-heading {
+    font-weight: 700;
+    font: 26px;
+    font-size: 46px;
+    color: #23504d;
+    text-decoration: none;
+
+}
+
+.sub-heading-submit {
+    justify-content: center;
+    text-align: center;
+    border: 3px solid #a5cf61;
+    width: 68rem;
+    margin-left: 6rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: medium;
+}
+
+.style-submission-btn {
+    border-radius: 1rem;
+    width: 9.5rem;
+    height: 2.5rem;
+    background-color: #23504d;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.image-preview__image-submission {
+    height: 400px;
+    width: 400px;
+    border-radius: 2rem;
+    border-radius: 2rem;
+    padding-top: 1rem;
+    text-decoration: none;
+}
+
+.upload-submission-file {
+    /* margin-top: -10rem; */
+    /* border: 2px solid #23504d; */
+    border-radius: 2rem;
+}
+
+.submit-form {
+    border: 4px solid #23504d;
+    border-radius: 2rem;
+    height: 35rem;
+    width: 70rem;
+    margin-left: 5rem;
+}
+
+.style-the-sel-btn {
+    display: flex;
+    float: left;
+}
+
+.input-style-img {
+    margin-bottom: 1rem;
+    border: 2px solid #23504d;
+    width: 15rem;
+    border-radius: 1rem;
+    color: #23504d;
+    text-align: start;
+    position: relative;
+    display: flex;
+    float: left;
+}
+
+
+.submit-user-info {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 15rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: smaller;
+    position: relative;
+}
+
