@@ -70,6 +70,16 @@ transition: width 0.4s ease-in-out;
 
 
 .container {
-  
   padding: 2px 16px;
+}
+
+#featuredImg{
+  display: flex;
+  justify-content: center;
+
+}
+
+h2{
+  color: var(--Green);
+  font-size: xx-large;
 }

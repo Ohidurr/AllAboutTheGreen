@@ -42,13 +42,13 @@ const LandingPage = () => {
         <input  placeholder ="Search" ></input>
         </div>
         </form>
-            <h2>Featured</h2>
+            <h2>Plant of the month:</h2>
             <div class="card" onClick="">
             <a href=""></a>
-            <img src="https://gardeningsolutions.ifas.ufl.edu/images/plants/flowers/flame_vine_flower.jpg" syle="width:100%"/>
+            <img id="featuredImg" src="https://gardeningsolutions.ifas.ufl.edu/images/plants/flowers/flame_vine_flower.jpg" syle="width:100%"/>
   <div class="container">
-    <h4><b>Plant of the Month:</b></h4>
-    <p {...feature}> Flame Vine</p>
+    <h4><b>Flame Vine:</b></h4>
+    <p {...feature}> The Flame Vine is a unique plant orginally from Brazil. Due to its vibrant color, it has quickly become a home-gardening favorite. </p>
   </div>
 </div>
     </div>
