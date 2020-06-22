@@ -34,6 +34,8 @@ const PlantSearch = (...args) => {
     cardDisplay = <Loading/>
   }else if(result){
     cardDisplay = <PlantResults result={result} />
+  }else{
+    cardDisplay = <p>Which plant would you like to search today</p>
   }
 
   const plantProps = {

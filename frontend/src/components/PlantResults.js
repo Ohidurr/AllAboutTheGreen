@@ -14,7 +14,7 @@ const PlantResults = ({ result }) => {
     
     if(plant.common_name !== null){
       return (
-        <div key={plant.id}>
+        <div key={plant.id} className="">
           <li>
               <h2>{plant.common_name}</h2>
               <h4>Scientific Name:</h4>
@@ -32,9 +32,11 @@ const PlantResults = ({ result }) => {
   });
 
   return (
+    <div className="plantResult">
     <ul>
       {plantList}
     </ul>
+    </div>
   );
 };
 
