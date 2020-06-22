@@ -38,15 +38,15 @@ const PlantContainer = () => {
 
     return (
       <div className="plantDisplay">
-        <h2>{plantDetail.common_name}</h2>
-        <h3>Family Name:</h3>
-        <p>
+        <h2 className="plantName">{plantDetail.common_name}</h2>
+        <h3 className="plantFamilyNameTitle">Family Name:</h3>
+        <p className="plantFamilyName">
           {plantDetail.family_common_name !== null
             ? plantDetail.family_common_name
             : plantDetail.common_name}
         </p>
-        <h3>Scientific Name:</h3>
-        <p>{plantDetail.scientific_name}</p>
+        <h3 className="plantSciNameTitle">Scientific Name:</h3>
+        <p className="plantSciName">{plantDetail.scientific_name}</p>
         {plantImg(plantDetail.id)}
       </div>
     );
@@ -55,9 +55,9 @@ const PlantContainer = () => {
   const plantImg = (id) => {
     if (id === 182557) {
       return (
-        <div>
-          <ul>
-            <li>
+        <div className="plantImg">
+          <ul className="plantImgUl">
+            <li className="plantImgLi">
               <img alt="img of a tom" src={Shine} />
             </li>
             <li>
@@ -74,9 +74,9 @@ const PlantContainer = () => {
       );
     } else if (id === 171840) {
       return (
-        <div>
-          <ul>
-            <li>
+        <div className="plantImg">
+          <ul className="plantImgUl">
+            <li className="plantImgLi">
               <img alt="img of a guav" src={Benefits} />
             </li>
             <li>
@@ -107,8 +107,8 @@ const PlantContainer = () => {
   //   };
 
   return (
-    <div>
-      <h1>Plant Detail</h1>
+    <div className="plantContainer">
+      <h1 className="plantContainerTitle">Plant Detail</h1>
       {singlePlantDisplay()}
     </div>
   );

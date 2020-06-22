@@ -1,20 +1,19 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-​
+
 .navBar {
     height: 2rem;
+    border: 5px solid #ffffff;
 }
 
-.navLi{
+.navLi {
     display:flex;
     justify-content: end;
+    border: 5px solid #1b1a1a;
 
 }
 ​
 .navUl {
     /* display: flex; */
+    border: 5px solid #ffffff;
     list-style: none;
     justify-content: space-between;
     border-bottom: 2px solid darkgreen;
@@ -24,6 +23,7 @@
 ​
 .logo-style {
     text-align: start;
+    border: 5px solid #ffffff;
 }
 ​
 .nav-selected {
@@ -31,8 +31,9 @@
     font-size: 30px;
     /* padding-top: 2rem; */
     text-decoration: none;
+    border: 5px solid #ffffff;
 }
-​
-.nav-selected .nav-selected {
+
+/* .nav-selected > .nav-selected {
     padding-top: 2rem;
-​}
+​} */
