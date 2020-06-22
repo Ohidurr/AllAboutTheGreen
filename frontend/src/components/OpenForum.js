@@ -3,6 +3,7 @@ import axios from 'axios'
 import { apiURL } from '../util/apiURL'
 import PostSubmission from './PostSubmission'
 import '../css/open-forum.css'
+import NavBar from './NavBar'
 
 const OpenForum = () => {
     const API = apiURL();
@@ -39,9 +40,11 @@ const OpenForum = () => {
 
 
     return (
+       
         <div className="mainCard">
+       
             <h2 className="heading-div">Community Forum</h2>
-            
+            <NavBar/>
             <div className="min-cards"> 
             {displaySubmission}
             </div>

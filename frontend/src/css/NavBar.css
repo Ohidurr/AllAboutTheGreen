@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+​
+.navBar {
+    height: 2rem;
+}
+​
+.navUl {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    border-bottom: 2px solid darkgreen;
+    height: 5rem;
+    margin-top: 1rem;
+}
+​
+.logo-style {
+    text-align: start;
+}
+​
+.nav-selected {
+    color: #23504d;
+    font-size: 30px;
+    /* padding-top: 2rem; */
+    text-decoration: none;
+}
+​
+.nav-selected .nav-selected {
+    padding-top: 2rem;
+​}

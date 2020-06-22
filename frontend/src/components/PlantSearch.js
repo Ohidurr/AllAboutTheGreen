@@ -3,6 +3,7 @@ import axios from "axios";
 import { HEROKU, TOKEN } from "./Constant";
 import Search from "./Search";
 import PlantResults from './PlantResults'
+import NavBar from './NavBar'
 
 const PlantSearch = (...args) => {
   const [search, setSearch] = useState("");
@@ -31,6 +32,7 @@ const PlantSearch = (...args) => {
 
   return (
     <>
+    <NavBar/>
       <Search {...plantProps} />
       <PlantResults result={result} />
     </>
