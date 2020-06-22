@@ -46,64 +46,64 @@ const PlantContainer = () => {
         </p>
         <h3 className="plantSciNameTitle">Scientific Name:</h3>
         <p className="plantSciName">{plantDetail.scientific_name}</p>
-        {plantImg(plantDetail.id)}
+        {displayImgs(plantDetail.images)}
       </div>
     );
   };
 
-  const plantImg = (id) => {
-    if (id === 182557) {
-      return (
-        <div className="plantImg">
-          <ul className="plantImgUl">
-            <li className="plantImgLi">
-              <img alt="img of a tom" src={Shine} />
-            </li>
-            <li>
-              <img alt="img of a tom" src={Sweet} />
-            </li>
-            <li>
-              <img alt="img of a tom" src={TomatoCurr} />
-            </li>
-            <li>
-              <img alt="img of a tom" src={TomatoSugar} />
-            </li>
-          </ul>
-        </div>
-      );
-    } else if (id === 171840) {
-      return (
-        <div className="plantImg">
-          <ul className="plantImgUl">
-            <li className="plantImgLi">
-              <img alt="img of a guav" src={Benefits} />
-            </li>
-            <li>
-              <img alt="img of a guav" src={Getty} />
-            </li>
-            <li>
-              <img alt="img of a guav" src={Growing} />
-            </li>
-            <li>
-              <img alt="img of a guav" src={Strawberry} />
-            </li>
-          </ul>
-        </div>
-      );
-    }
-  };
+  // const plantImg = (id) => {
+  //   if (id === 182557) {
+  //     return (
+  //       <div className="plantImg">
+  //         <ul className="plantImgUl">
+  //           <li className="plantImgLi">
+  //             <img alt="img of a tom" src={Shine} />
+  //           </li>
+  //           <li>
+  //             <img alt="img of a tom" src={Sweet} />
+  //           </li>
+  //           <li>
+  //             <img alt="img of a tom" src={TomatoCurr} />
+  //           </li>
+  //           <li>
+  //             <img alt="img of a tom" src={TomatoSugar} />
+  //           </li>
+  //         </ul>
+  //       </div>
+  //     );
+  //   } else if (id === 171840) {
+  //     return (
+  //       <div className="plantImg">
+  //         <ul className="plantImgUl">
+  //           <li className="plantImgLi">
+  //             <img alt="img of a guav" src={Benefits} />
+  //           </li>
+  //           <li>
+  //             <img alt="img of a guav" src={Getty} />
+  //           </li>
+  //           <li>
+  //             <img alt="img of a guav" src={Growing} />
+  //           </li>
+  //           <li>
+  //             <img alt="img of a guav" src={Strawberry} />
+  //           </li>
+  //         </ul>
+  //       </div>
+  //     );
+  //   }
+  // };
 
-  //   const displayImgs = (images) => {
-  //     let imagesArr = [];
-  //     for (let i in images) {
-  //       imagesArr.push(
-  //         <li>
-  //           <img key={i} alt="plant images" src={images[i].url} />
-  //         </li>
-  //       );
-  //     }
-  //     return imagesArr;
-  //   };
+    const displayImgs = (images) => {
+      let imagesArr = [];
+      for (let i in images) {
+        imagesArr.push(
+          <li>
+            <img key={i} alt="plant images" src={images[i].url} />
+          </li>
+        );
+      }
+      return imagesArr;
+    };
 
   return (
     <div className="plantContainerTwo">
