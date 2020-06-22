@@ -1,6 +1,8 @@
 import React from 'react';
 // import DisplayComments from './Comments/DisplayComments'
-import CreateComments from './Comments/CreateComments'
+import DisplayComments from './Comments/DisplayComments';
+import CreateComments from './Comments/CreateComments';
+import '../css/postsubmission.css'
 
 
 
@@ -20,7 +22,14 @@ const PostSubmission = ({inquiryId, userName, imageurl, inquiryContent, inquiryD
                         <p className="style-text"> Comment:  {inquiryContent} </p>
                     </div>
 
-                    <CreateComments/>
+                <div>
+                    <div className="create-comment-div">
+                        <CreateComments uploadId={inquiryId}/>
+                    </div>
+                    <div className="display-comment-div">
+                        <DisplayComments/>
+                    </div>
+                </div> 
                     
                 </div>
 

@@ -22,9 +22,16 @@ const getAllComments = async (req, res, next) => {
   
   const createNewComment = async (req, res, next) => {
     try {
+        // console.log(req)
+        // console.log(req.body)
+        // console.log(req.params)
+        const { upload_id, username, user_comment } = req.body
+        console.log(upload_id, username, user_comment)
+        console.log(req.body)
+        // let { upload_id } = req.params
         let newComment = await db.one(
-            "INSERT INTO Comments (id, upload_id, username, user_comment) VALUES(${id}, ${upload_id}, ${username}, ${user_comment}) RETURNING *",
-            req.body
+            `INSERT INTO Comments(upload_id, username, user_comment) VALUES($1, $2, $3) RETURNING *`,
+            [upload_id, username, user_comment]
         );
         res.status(200).json({
             message: "Congrats. Your user comment has been created.",
@@ -39,6 +46,7 @@ const getAllComments = async (req, res, next) => {
     }
   
   } 
+
 
 
 
