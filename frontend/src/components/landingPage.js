@@ -30,11 +30,11 @@ const LandingPage = () => {
   return (
     <div className="landingPage">
       <h1 id="title"> All About The Green</h1>
-      <form id="searchBox" type="text">
-        <div className="search">
-          <input placeholder="Search"></input>
+      
+        <div className="plantSearch">
+          <PlantSearch/>
         </div>
-      </form>
+  
       <div className="imgContainer">
         
       <h2 className="monthPlant">Plant of the month:</h2>

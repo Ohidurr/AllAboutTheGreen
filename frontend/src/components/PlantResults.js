@@ -34,11 +34,6 @@ const PlantResults = ({ result }) => {
   return (
     <ul>
       {plantList}
-      {plantList.length ? (
-        plantList
-      ) : (
-        <p>Which plant would you like to search</p>
-      )}
     </ul>
   );
 };
