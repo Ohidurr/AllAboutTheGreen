@@ -6,9 +6,15 @@
 .navBar {
     height: 2rem;
 }
+
+.navLi{
+    display:flex;
+    justify-content: end;
+
+}
 ​
 .navUl {
-    display: flex;
+    /* display: flex; */
     list-style: none;
     justify-content: space-between;
     border-bottom: 2px solid darkgreen;

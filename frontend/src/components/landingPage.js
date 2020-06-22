@@ -38,7 +38,9 @@ const LandingPage = () => {
         <NavBar/>
         <h1 id="title"> All About The Green</h1>
         <form id="searchBox" type="text">
-        <input placeholder ="Search" ></input>
+        <div className="search">
+        <input  placeholder ="Search" ></input>
+        </div>
         </form>
             <h2>Featured</h2>
             <div class="card" onClick="">
