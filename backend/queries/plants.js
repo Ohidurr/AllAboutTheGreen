@@ -3,7 +3,7 @@ const upload = require('./plantImageUpload')
 
 const getAllPlantUploads = async (req, res, next) => {
   try {
-    let allPlantUploads = await db.any('SELECT * FROM Uploads');
+    let allPlantUploads = await db.any('SELECT * FROM Uploads ORDER BY created_date DESC');
     res.status(200).json({
         status: "Success",
         message: "All plant inquiries are now showing",
