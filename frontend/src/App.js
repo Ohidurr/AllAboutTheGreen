@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import NavBar from './components/NavBar'
 import Submissions from "./components/Submissions";
 import OpenForum from "./components/OpenForum";
 import LandingPage from "./components/LandingPage";
@@ -10,6 +11,7 @@ import PlantScan from './components/PlantScan/PlantScan'
 const App = () => {
   return (
     <div className="App">
+      <NavBar />
       <Switch>
         <Route exact path="/" component={LandingPage} />
 

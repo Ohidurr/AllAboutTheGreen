@@ -34,8 +34,6 @@ const LandingPage = () => {
  return(
     <div>
     <header id="banner"></header>
-
-        <NavBar/>
         <h1 id="title"> All About The Green</h1>
         <form id="searchBox" type="text">
         <div className="search">

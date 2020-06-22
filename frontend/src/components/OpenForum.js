@@ -40,7 +40,6 @@ const OpenForum = () => {
 
     return (
         <div className="mainCard">
-            <NavBar/>
             {/* <Link to={"/submissions"}> Submit An Inquiry</Link> */}
             <div>
                 <h2 className="heading-div">Community Forum</h2>

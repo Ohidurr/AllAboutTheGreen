@@ -38,7 +38,6 @@ const PlantContainer = () => {
 
     return (
       <div className="plantDisplay">
-      <NavBar/>
         <h2>{plantDetail.common_name}</h2>
         <h3>Family Name:</h3>
         <p>
@@ -59,16 +58,16 @@ const PlantContainer = () => {
         <div>
           <ul>
             <li>
-              <img src={Shine} />
+              <img alt="img of a tom" src={Shine} />
             </li>
             <li>
-              <img src={Sweet} />
+              <img alt="img of a tom" src={Sweet} />
             </li>
             <li>
-              <img src={TomatoCurr} />
+              <img alt="img of a tom" src={TomatoCurr} />
             </li>
             <li>
-              <img src={TomatoSugar} />
+              <img alt="img of a tom" src={TomatoSugar} />
             </li>
           </ul>
         </div>
@@ -78,16 +77,16 @@ const PlantContainer = () => {
         <div>
           <ul>
             <li>
-              <img src={Benefits} />
+              <img alt="img of a guav" src={Benefits} />
             </li>
             <li>
-              <img src={Getty} />
+              <img alt="img of a guav" src={Getty} />
             </li>
             <li>
-              <img src={Growing} />
+              <img alt="img of a guav" src={Growing} />
             </li>
             <li>
-              <img src={Strawberry} />
+              <img alt="img of a guav" src={Strawberry} />
             </li>
           </ul>
         </div>
