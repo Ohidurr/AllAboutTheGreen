@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ScanToken } from './Scankey';
+import '../../css/plantscan.css'
 
 
 
@@ -74,8 +75,10 @@ const PlantScan = () => {
     }
     
     return (
-        <div>
-            <form>
+        <div className="hello-main-top">
+
+          <h2 className="image-scan-heading"> Image Scan </h2>
+            <form className="image-scan-form">
                 <input file={files} type="file" multiple />
                 <button onClick={handleClick} type="button">Process Image</button>
             </form>

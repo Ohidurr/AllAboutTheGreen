@@ -39,10 +39,10 @@ const OpenForum = () => {
 
 
     return (
-        <div className="mainCard">
+        <div className="mainCard-yup">
             {/* <Link to={"/submissions"}> Submit An Inquiry</Link> */}
             <div>
-                <h2 className="heading-div">Community Forum</h2>
+                <p className="heading-div">Community Forum</p>
             </div>
             
             <div className="min-cards"> 
