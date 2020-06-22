@@ -8,8 +8,8 @@ const {
 
 
 
-uploadComments.get('/', getCommentsByUpload);
-uploadComments.delete('/:id/comments/:comment_id', deleteComment);
+uploadComments.get("/:id/comments", getCommentsByUpload);
+uploadComments.delete("/:id/comments/:comment_id", deleteComment);
 
 
 

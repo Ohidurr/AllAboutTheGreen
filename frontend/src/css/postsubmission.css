@@ -7,8 +7,56 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 2rem;
+    
 
 }
+
+.style-image {
+    width: 450px;
+    height: 500px;
+    border-radius: 2rem;
+    margin-bottom: .5rem;
+}
+
+.inquiry-info {
+    border-radius: 1rem;
+    border: 3px solid #23504d;
+}
+
+.style-username {
+    text-align: left;
+    /* padding-top: 1rem; */
+    padding-top: 1rem;
+    padding-right: 0.3rem;
+}
+
+.style-text {
+    text-align: left;
+    /* padding-bottom: 1rem; */
+    padding-bottom: 1rem;
+    padding-right: 0.3rem;
+}
+
+.style-label-1 {
+    display: flex;
+    float: left;
+    margin-left: .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-top: 1rem;
+    margin-right: 0.4rem;
+}
+
+.style-label-2 {
+    display: flex;
+    float: left;
+    margin-left: .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 1rem;
+    margin-right: 0.4rem;
+}
+
 
 .submission-main {
     display: grid;
@@ -17,15 +65,22 @@
 }
 
 
-/* .submission-sec {
-
-} */
-
-.create-comment-div {
-    width: 70%;
+.submission-sec {
+    margin-bottom: 2rem;
 
 }
 
-/* .display-comment-div {
 
-} */
+.all-about-comments-div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.create-comment-div {
+    width: 50%;
+}
+
+.display-comment-div {
+    width: 50%;
+}

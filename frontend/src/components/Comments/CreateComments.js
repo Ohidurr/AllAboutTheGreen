@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import PostComment from '../Comments/PostComment'
-// import CommentData from "./CommentData";
 import { useInput } from '../../util/useInput';
 import { apiURL } from '../../util/apiURL';
 import axios from 'axios';
@@ -49,7 +47,7 @@ const CreateComments = ({uploadId}) => {
     return (
       <div className="commentDiv">
         <div className="commentSectionDiv">
-          <h1 className="commentHeading">Comment Section </h1>
+          <h2 className="commentHeading">Comment Section </h2>
         </div>
 
 

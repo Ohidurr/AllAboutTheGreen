@@ -5,6 +5,7 @@ import OpenForum from "./components/OpenForum";
 import LandingPage from "./components/LandingPage";
 import PlantSearch from "./components/PlantSearch";
 import PlantContainer from "./components/PlantContainer";
+import PlantScan from './components/PlantScan/PlantScan'
 
 const App = () => {
   return (
@@ -12,7 +13,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={LandingPage} />
 
-        <Route exact path="/submissons" component={Submissions}/>
+        <Route exact path="/submissions" component={Submissions}/>
           
         <Route exact path="/open-forum" component={OpenForum} />
 
@@ -23,6 +24,8 @@ const App = () => {
         <Route path="/plants/:id" component={PlantContainer} />
           {/* <PlantContainer />
         </Route> */}
+
+        <Route path="/plant-scan" component={PlantScan} />
         
         {/* <Route exact path ="/">
         <LandingPage/>

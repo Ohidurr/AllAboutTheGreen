@@ -25,7 +25,7 @@ const NavBar = () => {
             </li>
   
             <li className="navLi">
-              <NavLink exact to="/submissons" className="nav-selected">
+              <NavLink exact to="/submissions" className="nav-selected">
                 Plant Inquiry
                 {/* <Mainlogo/> */}
               </NavLink>

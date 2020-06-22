@@ -4,7 +4,7 @@ import { useInput } from '../util/useInput';
 import { apiURL } from '../util/apiURL';
 
 
-const Comments = () => {
+// const Comments = () => {
   const setUsername = useInput("");
   const setComment = useInput("");
   const [allComments, setAllComments] = useState([]);
@@ -67,7 +67,7 @@ const Comments = () => {
   return (
     <div className="commentDiv">
       <div className="commentSectionDiv">
-        <h1 className="commentHeading">Comment Section </h1>
+        <h3 className="commentHeading">Comment Section </h3>
       </div>
       <div className="formDiv">
 
@@ -99,6 +99,6 @@ const Comments = () => {
       </div>
     </div>
   );
-};
+// };
 
-export default Comments;
+// export default Comments;

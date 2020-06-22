@@ -13,6 +13,8 @@
 .min-cards {
     justify-content: center;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-left: -.60rem;
+    /* justify-content: center; */
 }
 
